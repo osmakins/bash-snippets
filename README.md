@@ -14,6 +14,6 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 
 | Name | Description |
 | --- | --- |
-| [center-text.sh](src/Bash/center-text/center-text.sh) | Calculate the compound interest over a defined term. |
-| [check-prerequisites.sh](src/Bash/check-prerequisite/check-prerequisite.sh) | Check prerequisite commands are installed. |
-| [error-messages.sh](src/Bash/error-messages/center-text.sh) | Display error, warning and success messages. |
+| [center-text.sh](src/bash/center-text/center-text.sh) | Calculate the compound interest over a defined term. |
+| [check-prerequisites.sh](src/bash/check-prerequisite/check-prerequisite.sh) | Check prerequisite commands are installed. |
+| [error-messages.sh](src/bash/error-messages/error-messages.sh) | Display error, warning and success messages. |
