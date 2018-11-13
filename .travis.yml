@@ -1,0 +1,55 @@
+matrix:
+  include:
+  - language: php
+    php: 5.5
+    script: find src/PHP -type f -name "*.php" | while read file; do echo "Linting
+      $file"; php -l $file; done
+  - language: php
+    php: 5.6
+    script: find src/PHP -type f -name "*.php" | while read file; do echo "Linting
+      $file"; php -l $file; done
+  - language: php
+    php: 7.0
+    script: find src/PHP -type f -name "*.php" | while read file; do echo "Linting
+      $file"; php -l $file; done
+  - language: php
+    php: 7.1
+    script: find src/PHP -type f -name "*.php" | while read file; do echo "Linting
+      $file"; php -l $file; done
+  - language: php
+    php: 7.2
+    script: find src/PHP -type f -name "*.php" | while read file; do echo "Linting
+      $file"; php -l $file; done
+  - language: bash
+    os: linux
+    dist: precise
+    sudo: required
+    install:
+    - "./build/install.sh"
+    script:
+    - "./build/build.sh"
+  - language: bash
+    os: linux
+    dist: trusty
+    sudo: required
+    install:
+    - "./build/install.sh"
+    script:
+    - "./build/build.sh"
+  - language: bash
+    os: osx
+    dist: precise
+    sudo: required
+    install:
+    - "./build/install.sh"
+    script:
+    - "./build/build.sh"
+  - language: ruby
+    rvm: 2.2
+    before_script: gem install awesome_bot
+    script: find . -type f -name "*.md" | while read file; do awesome_bot $file --allow-redirect
+      --allow-dupe -w github.com/wolfsoftware/code-snippets/issues/; done
+notifications:
+  email: false
+  slack:
+    secure: DKzWhPom/o58ZBczcoB0czYPtsHb/cPxAd2hSMsJ/ddm/f5rm5fjvL8q+bLGF3jFECi4yH9B38L1OtYsyjEAsqd3EJjDUsvfvXhWqS2L8y3ABVMkm+QC7j/FaG2nQJ6tkn6Vmj2Hk/aSNZamAIjNBel9VMB+h9DM9FQuCG42pWEErg6Kyv4AqKjzWodhW6BYKzzS6Z064EZH+3obwdF6TJmPjnBFGJAayx6hdWTMmePdBrioBrjRbtpJJReRY9vi3ASIZcI/OvlLZ0uOC8NU/7Z8EiFsbA3Cc08u4QyHRe5y59fX8xAKeJWhpxyC24zQ0BJwBpLDsO/6XeoiatfZew8GFIIM2sC5N9nH6ii6fw4XmPCOD9K9HmwFgymaxTW68Cxhp90LxV2omA3jSzh7v8CHiOHW32DEO5yWK/5ioIkYVJx1Bor/F01JGxjVlugS2TsmLavytPjMf5VWRBt+R+7xQqtDgr/eRwqwTingHBwy+ucWErfj71njo1QLMXJF+X9dax5Yo2OuxcIS7qChy/LJfkRHYc++gOqIE/WV8TdqQ6s0lFdnKUXQHD8imfLk1+XFlZhx64BUFvm4fXSe3p++RUEZzsnmdCE2EesNB1kTXvtCQvYg30NnvCD8AHoHfcVev+g9vSpFyThM/aaKv1vUzSopKuD0O+HqtrO/bDs=
