@@ -28,13 +28,13 @@ check_prereqs()
     do
         command=$(command -v "${i}")
         if [[ -z $command ]]; then
-            printf "$i is not in your command path\n"
+            printf '%s is not in your command path\n' "${i}"
             error_count=$((error_count+1))
         fi
     done
 
     if [[ $error_count -gt 0 ]]; then
-        printf "$error_count errors located - fix before re-running\n";
+        printf '%d errors located - fix before re-running\n' ${error_count};
         exit 1;
     fi
 }
