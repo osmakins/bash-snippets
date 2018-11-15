@@ -3,7 +3,7 @@ set -eo pipefail
 test -n "${DEBUG:-}" && set -x
 
 find_requirements() {
-        git ls-tree -r HEAD | grep -E 'requirements.txt' | awk '{print $4}'
+	git ls-files | grep -E 'requirements.txt'
 }
 
 install_all_requirements() {

@@ -22,7 +22,7 @@ check() {
 }
 
 find_scripts() {
-	git ls-tree -r HEAD | grep -E '^1007|.*\..*py$' | awk '{print $4}'
+	git ls-tree -r HEAD | grep -E '^100755.*\.py$' | awk '{print $4}'
 }
 
 is_compatible() {
