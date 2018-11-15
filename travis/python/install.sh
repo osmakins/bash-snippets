@@ -2,10 +2,14 @@
 set -eo pipefail
 test -n "${DEBUG:-}" && set -x
 
+find_requirements() {
+        git ls-tree -r HEAD | grep -E 'requirements.txt' | awk '{print $4}'
+}
+
 install_all_requirements() {
 	echo 'Installing all requirements'
 	find_requirements | while read -r file; do
-		pip install -r $file
+		pip install -r "${file}"
 	done
 }
 
