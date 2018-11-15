@@ -5,25 +5,73 @@ matrix:
     dist: precise
     sudo: required
     install:
-    - "./build/install.sh"
+    - "./travis/bash/install.sh"
     script:
-    - "./build/build.sh"
+    - "./travis/bash/build.sh"
   - language: bash
     os: linux
     dist: trusty
     sudo: required
     install:
-    - "./build/install.sh"
+    - "./travis/bash/install.sh"
     script:
-    - "./build/build.sh"
+    - "./travis/bash/build.sh"
   - language: bash
     os: osx
     dist: precise
     sudo: required
     install:
-    - "./build/install.sh"
+    - "./travis/bash/install.sh"
     script:
-    - "./build/build.sh"
+    - "./travis/bash/build.sh"
+  - language: python
+    python: 2.6
+    os: linux
+    sudo: required
+    install:
+      - "./travis/python/install.sh"
+    script:
+      - "./travis/python/build.sh"
+  - language: python
+    python: 2.7
+    os: linux
+    sudo: required
+    install:
+      - "./travis/python/install.sh"
+    script:
+      - "./travis/python/build.sh"
+  - language: python
+    python: 3.3
+    os: linux
+    sudo: required
+    install:
+      - "./travis/python/install.sh"
+    script:
+      - "./travis/python/build.sh"
+  - language: python
+    python: 3.4
+    os: linux
+    sudo: required
+    install:
+      - "./travis/python/install.sh"
+    script:
+      - "./travis/python/build.sh"
+  - language: python
+    python: 3.5
+    os: linux
+    sudo: required
+    install:
+      - "./travis/python/install.sh"
+    script:
+      - "./travis/python/build.sh"
+  - language: python
+    python: 3.6
+    os: linux
+    sudo: required
+    install:
+      - "./travis/python/install.sh"
+    script:
+      - "./travis/python/build.sh"
   - language: ruby
     rvm: 2.2
     before_script: gem install awesome_bot

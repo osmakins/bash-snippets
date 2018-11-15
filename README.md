@@ -17,3 +17,9 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 | [center-text.sh](src/bash/center-text/center-text.sh) | Calculate the compound interest over a defined term. |
 | [check-prerequisites.sh](src/bash/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
 | [error-messages.sh](src/bash/error-messages/error-messages.sh) | Display error, warning and success messages. |
+
+## Python Snippets
+
+| Name | Description |
+| --- | --- |
+| [human-size.py](src/python/human-size/human-size.py) | Convert the number of bytes into a more human readable format. |
