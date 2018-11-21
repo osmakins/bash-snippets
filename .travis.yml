@@ -1,82 +1,106 @@
+sudo: required
+
 matrix:
   include:
   - language: bash
     os: linux
     dist: precise
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
     install:
-    - "./travis/bash/install.sh"
+      - "./travis/shellcheck/install.sh"
     script:
-    - "./travis/bash/build.sh"
+      - "./travis/shellcheck/build.sh"
   - language: bash
     os: linux
     dist: trusty
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
     install:
-    - "./travis/bash/install.sh"
+      - "./travis/shellcheck/install.sh"
     script:
-    - "./travis/bash/build.sh"
+      - "./travis/shellcheck/build.sh"
   - language: bash
     os: osx
     dist: precise
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
     install:
-    - "./travis/bash/install.sh"
+      - "./travis/shellcheck/install.sh"
     script:
-    - "./travis/bash/build.sh"
+      - "./travis/shellcheck/build.sh"
   - language: python
     python: 2.6
     os: linux
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
     install:
-      - "./travis/python/install.sh"
+      - "./travis/pycodetyle/install.sh"
     script:
-      - "./travis/python/build.sh"
+      - "./travis/pycodetyle/build.sh"
   - language: python
     python: 2.7
     os: linux
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
     install:
-      - "./travis/python/install.sh"
+      - "./travis/pycodetyle/install.sh"
     script:
-      - "./travis/python/build.sh"
+      - "./travis/pycodetyle/build.sh"
   - language: python
     python: 3.3
     os: linux
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
     install:
-      - "./travis/python/install.sh"
+      - "./travis/pycodetyle/install.sh"
     script:
-      - "./travis/python/build.sh"
+      - "./travis/pycodetyle/build.sh"
   - language: python
     python: 3.4
     os: linux
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
     install:
-      - "./travis/python/install.sh"
+      - "./travis/pycodetyle/install.sh"
     script:
-      - "./travis/python/build.sh"
+      - "./travis/pycodetyle/build.sh"
   - language: python
     python: 3.5
     os: linux
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
     install:
-      - "./travis/python/install.sh"
+      - "./travis/pycodetyle/install.sh"
     script:
-      - "./travis/python/build.sh"
+      - "./travis/pycodetyle/build.sh"
   - language: python
     python: 3.6
     os: linux
-    sudo: required
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/pycodestyle-travis.git travis/pycodetyle
     install:
-      - "./travis/python/install.sh"
+      - "./travis/pycodetyle/install.sh"
     script:
-      - "./travis/python/build.sh"
+      - "./travis/pycodetyle/build.sh"
   - language: ruby
     rvm: 2.2
-    before_script: gem install awesome_bot
-    script: find . -type f -name "*.md" | while read file; do awesome_bot $file --allow-redirect
-      --allow-dupe -w github.com/wolfsoftware/code-snippets/issues/; done
+    before_install:
+      - mkdir travis
+      - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
+    install:
+      - "./travis/awesomebot/install.sh"
+    script: 
+      - "./travis/awesomebot/build.sh"
 notifications:
   email: false
   slack:
