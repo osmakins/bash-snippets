@@ -31,7 +31,7 @@ get_terraform_version()
         exit
     fi
 
-    echo ${terraform_version}
+    echo "${terraform_version}"
 }
 
 # -------------------------------------------------------------------------------- #
@@ -43,7 +43,7 @@ get_terraform_version()
 run_test()
 {
     tf_version=$(get_terraform_version)
-    echo $tf_version
+    echo "${tf_version}"
 }
 
 # -------------------------------------------------------------------------------- #
