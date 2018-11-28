@@ -18,6 +18,7 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 | [check-prerequisites.sh](src/bash/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
 | [error-messages.sh](src/bash/error-messages/error-messages.sh) | Display error, warning and success messages. |
 | [get-confirmation.sh](src/bash/get-confirmation/get-confirmation.sh) | Get user confirmation for an action. |
+| [get-terraform-version.sh](src/bash/get-terraform-version/get-terraform-version.sh) | Get the current terraform version. |
 | [rollingback.sh](src/bash/rollingback/rollingback.sh) | Using signals to create rollback functions for cleaner scripting. |
 | [using-set.sh](src/bash/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
 
