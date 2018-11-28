@@ -16,9 +16,10 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 | --- | --- |
 | [center-text.sh](src/bash/center-text/center-text.sh) | Calculate the compound interest over a defined term. |
 | [check-prerequisites.sh](src/bash/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
-| [defensive-programming.sh](src/bash/defensive-programming/defensive-programming.sh) | Snippets for writting better bash scripts. |
 | [error-messages.sh](src/bash/error-messages/error-messages.sh) | Display error, warning and success messages. |
 | [get-confirmation.sh](src/bash/get-confirmation/get-confirmation.sh) | Get user confirmation for an action. |
+| [rollingback.sh](src/bash/rollingback/rollingback.sh) | Using signals to create rollback functions for cleaner scripting. |
+| [using-set.sh](src/bash/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
 
 ## Python Snippets
 
