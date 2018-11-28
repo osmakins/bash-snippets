@@ -21,6 +21,7 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 | [get-script-info.sh](src/bash/get-script-info/get-script-info.sh) | Get information about a script (full path and script name). |
 | [get-terraform-version.sh](src/bash/get-terraform-version/get-terraform-version.sh) | Get the current terraform version. |
 | [rollingback.sh](src/bash/rollingback/rollingback.sh) | Using signals to create rollback functions for cleaner scripting. |
+| [strict-mode.sh](src/bash/strict-mode/strict-mode.sh) | An example of a 'strict' mode setup for bash scripts. |
 | [using-set.sh](src/bash/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
 
 ## Python Snippets

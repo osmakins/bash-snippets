@@ -7,6 +7,7 @@ CHANGES:
 * Added a new script bash/get-script-info.sh. ([@TGWolf][])
 * Added a new script bash/get-terraform-version.sh. ([@TGWolf][])
 * Added a new script bash/rollingback.sh. ([@TGWolf][])
+* Added a new script bash/strict-mode.sh. ([@TGWolf][])
 * Added a new script bash/using-set.sh. ([@TGWolf][])
 
 ## 1.0.2 (November 21, 2018)
