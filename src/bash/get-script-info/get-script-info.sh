@@ -15,7 +15,7 @@
 
 get_script_info()
 {
-    [[ $0 != "${BASH_SOURCE}" ]] && IS_SOURCED=true || IS_SOURCED=false
+    [[ $0 != "${BASH_SOURCE[0]}" ]] && IS_SOURCED=true || IS_SOURCED=false
 
     INVOKED_FILE="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
     INVOKED_PATH="$(dirname "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}")"
