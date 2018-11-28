@@ -1,8 +1,9 @@
-## 1.0.3 (November 27, 2018)
+## 1.0.3 (November 28, 2018)
 
 CHANGES:
 
 * Added a new script bash/get-confirmation.sh. ([@TGWolf][])
+* Added a new script bash/defensive-programming.sh. ([@TGWolf][])
 
 ## 1.0.2 (November 21, 2018)
 
