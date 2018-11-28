@@ -4,9 +4,10 @@ CHANGES:
 
 * Small tweak to the show-errors.sh snippet to ensure errors etc get written to STDERR not STDOUT. ([@TGWolf][])
 * Added a new script bash/get-confirmation.sh. ([@TGWolf][])
-* Added a new script bash/using-set.sh. ([@TGWolf][])
-* Added a new script bash/rollingback.sh. ([@TGWolf][])
+* Added a new script bash/get-script-info.sh. ([@TGWolf][])
 * Added a new script bash/get-terraform-version.sh. ([@TGWolf][])
+* Added a new script bash/rollingback.sh. ([@TGWolf][])
+* Added a new script bash/using-set.sh. ([@TGWolf][])
 
 ## 1.0.2 (November 21, 2018)
 

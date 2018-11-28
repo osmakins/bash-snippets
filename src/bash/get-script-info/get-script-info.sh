@@ -3,35 +3,35 @@
 # -------------------------------------------------------------------------------- #
 # Description                                                                      #
 # -------------------------------------------------------------------------------- #
-# A simple script to show how to programatically get the terraform version.        #
+# This is a simple script to show how to get get the script base path and name.    #
 # -------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------- #
-# Get Terraform Version                                                            #
+# Get Script Name                                                                  #
 # -------------------------------------------------------------------------------- #
-# Programatically get the terraform version.                                       #
+# Work out the name to the script, not matter where it is invoked from.            #
 # -------------------------------------------------------------------------------- #
 
-get_terraform_version()
+get_script_name()
 {
-    local terraform_version
+    local script_name
 
-    command=$(command -v "terraform")
-    if [[ -z $command ]]; then
-        echo "Terraform is not installed - Aborting"
-        exit
-    fi
+    script_name=$(basename "$0")
+    echo "${script_name}"
+}
 
-    terraform_version=$(terraform --version)
-    terraform_version=${terraform_version##* }                  # retain the part after the last space
-    terraform_version=${terraform_version#?}                    # strip the first letter
+# -------------------------------------------------------------------------------- #
+# Get Script Path                                                                  #
+# -------------------------------------------------------------------------------- #
+# Work out the path to the script, not matter where it is invoked from.            #
+# -------------------------------------------------------------------------------- #
 
-    if [[ -z ${terraform_version} ]]; then
-        echo "Could not determine terraform version - Aborting"
-        exit
-    fi
+get_script_path()
+{
+    local script_path
 
-    echo ${terraform_version}
+    script_path="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
+    echo "${script_path}"
 }
 
 # -------------------------------------------------------------------------------- #
@@ -42,8 +42,12 @@ get_terraform_version()
 
 run_test()
 {
-    tf_version=$(get_terraform_version)
-    echo $tf_version
+    name=$(get_script_name)
+    echo "Name = $name"
+
+    path=$(get_script_path)
+    echo "Path = $path"
+
 }
 
 # -------------------------------------------------------------------------------- #
