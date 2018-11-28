@@ -15,25 +15,24 @@
 
 get_script_info()
 {
-    sourced=false
+    [[ $0 != "${BASH_SOURCE}" ]] && IS_SOURCED=true || IS_SOURCED=false
 
-    if [[ $0 != $BASH_SOURCE ]]; then
-        sourced=true
-    fi
+    INVOKED_FILE="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
+    INVOKED_PATH="$(dirname "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}")"
+    FULL_PATH="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
+    FILE_NAME=$(basename "${BASH_SOURCE[0]}")
 
-    readonly sourced
+    declare -r IS_SOURCED
+    declare -r INVOKED_FILE
+    declare -r INVOKED_PATH
+    declare -r FULL_PATH
+    declare -r FILE_NAME
 
-    readonly invoked_file="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
-    readonly invoked_path="$(dirname "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}")"
-
-    readonly full_path="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
-    readonly file_name=$(basename "${BASH_SOURCE[0]}")
-
-    declare -g sourced
-    declare -g invoked_file
-    declare -g invoked_path
-    declare -g full_path
-    declare -g file_name
+    export IS_SOURCED
+    export INVOKED_FILE
+    export INVOKED_PATH
+    export FULL_PATH
+    export FILE_NAME
 }
 
 # -------------------------------------------------------------------------------- #
@@ -46,11 +45,11 @@ run_test()
 {
     get_script_info
 
-    echo "Sourced? : ${sourced}"
-    echo "Invoked File: ${invoked_file}"
-    echo "Invoked Path: ${invoked_path}"
-    echo "Full Path: ${full_path}"
-    echo "Script Name: ${file_name}"
+    echo "Sourced? : ${IS_SOURCED}"
+    echo "Invoked File: ${INVOKED_FILE}"
+    echo "Invoked Path: ${INVOKED_PATH}"
+    echo "Full Path: ${FULL_PATH}"
+    echo "Script Name: ${FILE_NAME}"
 }
 
 # -------------------------------------------------------------------------------- #
