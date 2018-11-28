@@ -7,31 +7,33 @@
 # -------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------- #
-# Get Script Name                                                                  #
+# Get Script Info                                                                  #
 # -------------------------------------------------------------------------------- #
-# Work out the name to the script, not matter where it is invoked from.            #
+# Work out some basic facts about the script, how it was called, where it lives,   #
+# what it is called etc.                                                           #
 # -------------------------------------------------------------------------------- #
 
-get_script_name()
+get_script_info()
 {
-    local script_name
+    sourced=false
 
-    script_name=$(basename "$0")
-    echo "${script_name}"
-}
+    if [[ $0 != $BASH_SOURCE ]]; then
+        sourced=true
+    fi
 
-# -------------------------------------------------------------------------------- #
-# Get Script Path                                                                  #
-# -------------------------------------------------------------------------------- #
-# Work out the path to the script, not matter where it is invoked from.            #
-# -------------------------------------------------------------------------------- #
+    readonly sourced
 
-get_script_path()
-{
-    local script_path
+    readonly invoked_file="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
+    readonly invoked_path="$(dirname "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}")"
 
-    script_path="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
-    echo "${script_path}"
+    readonly full_path="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
+    readonly file_name=$(basename "${BASH_SOURCE[0]}")
+
+    declare -g sourced
+    declare -g invoked_file
+    declare -g invoked_path
+    declare -g full_path
+    declare -g file_name
 }
 
 # -------------------------------------------------------------------------------- #
@@ -42,12 +44,13 @@ get_script_path()
 
 run_test()
 {
-    name=$(get_script_name)
-    echo "Name = $name"
+    get_script_info
 
-    path=$(get_script_path)
-    echo "Path = $path"
-
+    echo "Sourced? : ${sourced}"
+    echo "Invoked File: ${invoked_file}"
+    echo "Invoked Path: ${invoked_path}"
+    echo "Full Path: ${full_path}"
+    echo "Script Name: ${file_name}"
 }
 
 # -------------------------------------------------------------------------------- #
