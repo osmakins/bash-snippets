@@ -19,6 +19,7 @@ get_script_info()
 
     [[ $0 != "${BASH_SOURCE[0]}" ]] && IS_SOURCED=true || IS_SOURCED=false
 
+    READONLY=false
     INVOKED_FILE="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
     INVOKED_PATH="$(dirname "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}")"
     FULL_PATH="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
@@ -26,6 +27,7 @@ get_script_info()
 
     if [[ "${ro}" = true ]]
     then
+        redaonly READONLY
         readonly IS_SOURCED
         readonly INVOKED_FILE
         readonly INVOKED_PATH
@@ -33,6 +35,7 @@ get_script_info()
         readonly FILE_NAME
     fi
 
+    export READONLY
     export IS_SOURCED
     export INVOKED_FILE
     export INVOKED_PATH
@@ -48,8 +51,9 @@ get_script_info()
 
 run_test()
 {
-    get_script_info
+    get_script_info "${1:-false}"
 
+    echo "Read Only? : ${READONLY}"
     echo "Sourced? : ${IS_SOURCED}"
     echo "Invoked File: ${INVOKED_FILE}"
     echo "Invoked Path: ${INVOKED_PATH}"
@@ -63,7 +67,7 @@ run_test()
 # This is the actual 'script' and the functions/sub routines are called in order.  #
 # -------------------------------------------------------------------------------- #
 
-run_test
+run_test "$@"
 
 # -------------------------------------------------------------------------------- #
 # End of Script                                                                    #
