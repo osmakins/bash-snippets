@@ -15,6 +15,8 @@
 
 get_script_info()
 {
+    local ro=${1:-false}
+
     [[ $0 != "${BASH_SOURCE[0]}" ]] && IS_SOURCED=true || IS_SOURCED=false
 
     INVOKED_FILE="${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}"
@@ -22,11 +24,14 @@ get_script_info()
     FULL_PATH="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
     FILE_NAME=$(basename "${BASH_SOURCE[0]}")
 
-    declare -r IS_SOURCED
-    declare -r INVOKED_FILE
-    declare -r INVOKED_PATH
-    declare -r FULL_PATH
-    declare -r FILE_NAME
+    if [[ "${ro}" = true ]]
+    then
+        readonly IS_SOURCED
+        readonly INVOKED_FILE
+        readonly INVOKED_PATH
+        readonly FULL_PATH
+        readonly FILE_NAME
+    fi
 
     export IS_SOURCED
     export INVOKED_FILE
