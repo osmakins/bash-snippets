@@ -1,3 +1,9 @@
+## 1.0.4 (Unreleased)
+
+CHANGES:
+
+* Added a new script bash/using-colour.sh. ([@TGWolf][])
+
 ## 1.0.3 (November 28, 2018)
 
 CHANGES:
