@@ -27,7 +27,7 @@ get_script_info()
     FULL_PATH="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
     FILE_NAME=$(basename "${BASH_SOURCE[0]}")
 
-    if [[ $# > 0 ]]; then
+    if [[ $# -gt 0 ]]; then
         SCRIPT_ARGS=$(printf "'%s', " "${@}")
         SCRIPT_ARGS=${SCRIPT_ARGS::-2}                # Trim off the last comma and space
     else
