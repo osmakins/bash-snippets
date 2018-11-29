@@ -6,6 +6,8 @@
 # This is a simple script to show how to get get the script base path and name.    #
 # -------------------------------------------------------------------------------- #
 
+READONLY_INFO=true               # Set the script info to READONLY
+
 # -------------------------------------------------------------------------------- #
 # Get Script Info                                                                  #
 # -------------------------------------------------------------------------------- #
@@ -15,7 +17,7 @@
 
 get_script_info()
 {
-    local ro=${1:-false}
+    local ro=${READONLY_INFO:-false}
 
     [[ $0 != "${BASH_SOURCE[0]}" ]] && IS_SOURCED=true || IS_SOURCED=false
 
@@ -25,14 +27,21 @@ get_script_info()
     FULL_PATH="$( cd -P "$(dirname "${BASH_SOURCE[0]}")" && pwd )"
     FILE_NAME=$(basename "${BASH_SOURCE[0]}")
 
+    if [[ $# > 0 ]]; then
+        SCRIPT_ARGS=$(printf "'%s', " "${@}")
+        SCRIPT_ARGS=${SCRIPT_ARGS::-2}                # Trim off the last comma and space
+    else
+        SCRIPT_ARGS="None"
+    fi
+
     if [[ "${ro}" = true ]]
     then
-        redaonly READONLY
         readonly IS_SOURCED
         readonly INVOKED_FILE
         readonly INVOKED_PATH
         readonly FULL_PATH
         readonly FILE_NAME
+        readonly SCRIPT_ARGS
     fi
 
     export READONLY
@@ -41,6 +50,7 @@ get_script_info()
     export INVOKED_PATH
     export FULL_PATH
     export FILE_NAME
+    export SCRIPT_ARGS
 }
 
 # -------------------------------------------------------------------------------- #
@@ -51,7 +61,7 @@ get_script_info()
 
 run_test()
 {
-    get_script_info "${1:-false}"
+    get_script_info "${@}"
 
     echo "Read Only? : ${READONLY}"
     echo "Sourced? : ${IS_SOURCED}"
@@ -59,6 +69,7 @@ run_test()
     echo "Invoked Path: ${INVOKED_PATH}"
     echo "Full Path: ${FULL_PATH}"
     echo "Script Name: ${FILE_NAME}"
+    echo "Script Args: ${SCRIPT_ARGS}"
 }
 
 # -------------------------------------------------------------------------------- #
