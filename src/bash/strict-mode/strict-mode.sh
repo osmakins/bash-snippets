@@ -10,6 +10,8 @@
 # Errexit                                                                          #
 # -------------------------------------------------------------------------------- #
 # Exit on error. Append "|| true" if you expect an error                           #
+#                                                                                  #
+# Shortcut: set -e                                                                 #
 # -------------------------------------------------------------------------------- #
 set -o errexit
 
@@ -17,6 +19,8 @@ set -o errexit
 # Nounset                                                                          #
 # -------------------------------------------------------------------------------- #
 # Do not allow use of undefined vars. Use ${VAR:-} to use an undefined VAR         #
+#                                                                                  #
+# Shortcut: set -u                                                                 #
 # -------------------------------------------------------------------------------- #
 set -o nounset
 
@@ -24,6 +28,8 @@ set -o nounset
 # Pipefail                                                                         #
 # -------------------------------------------------------------------------------- #
 # Catch the error in case mysqldump fails (but gzip succeeds) in `mysqldump |gzip` #
+#                                                                                  #
+# Shortcut: none                                                                   #
 # -------------------------------------------------------------------------------- #
 set -o pipefail
 
@@ -31,6 +37,8 @@ set -o pipefail
 # Xtrace                                                                           #
 # -------------------------------------------------------------------------------- #
 # Turn on traces, useful while debugging but commented out by default              #
+#                                                                                  #
+# Shortcut: set -x                                                                 #
 # -------------------------------------------------------------------------------- #
 [[ ! -z ${DEBUG:-} ]] && set -o xtrace
 
