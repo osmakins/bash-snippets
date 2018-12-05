@@ -15,7 +15,7 @@
 
 show_error()
 {
-    if [[ ! -z $1 ]]; then
+    if [[ -n $1 ]]; then
         printf '%s%s%s\n' "${red}" "${*}" "${reset}" 1>&2
     fi
 }
@@ -28,7 +28,7 @@ show_error()
 
 show_warning()
 {
-    if [[ ! -z $1 ]]; then
+    if [[ -n $1 ]]; then
         printf '%s%s%s\n' "${yellow}" "${*}" "${reset}" 1>&2
     fi
 }
@@ -41,7 +41,7 @@ show_warning()
 
 show_success()
 {
-    if [[ ! -z $1 ]]; then
+    if [[ -n $1 ]]; then
         printf '%s%s%s\n' "${green}" "${*}" "${reset}" 1>&2
     fi
 }
