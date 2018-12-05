@@ -30,4 +30,4 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 | Name | Description |
 | --- | --- |
 | [human-size.py](src/python/human-size/human-size.py) | Convert the number of bytes into a more human readable format. |
-| [which.py](src/python/which/which.py) | A python inmplementation of the UNIX which command. |
+| [which.py](src/python/which/which.py) | A python implementation of the UNIX which command. |
