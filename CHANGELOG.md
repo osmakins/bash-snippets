@@ -3,6 +3,7 @@
 CHANGES:
 
 * Added a new script bash/using-colour.sh. ([@TGWolf][])
+* Added a new script python/which.py. ([@TGWolf][])
 
 ## 1.0.3 (November 28, 2018)
 
