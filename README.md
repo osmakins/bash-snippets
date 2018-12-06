@@ -29,5 +29,6 @@ This is a collection of useful(ish) snippets. The snippets are all simple self-c
 
 | Name | Description |
 | --- | --- |
+| [execute-shell-command.py](src/python/execute-shell-command/execute-shell-command.py) | A python function for excuting shell commands and returning the outputs and exit status. |
 | [human-size.py](src/python/human-size/human-size.py) | Convert the number of bytes into a more human readable format. |
 | [which.py](src/python/which/which.py) | A python implementation of the UNIX which command. |
