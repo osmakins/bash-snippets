@@ -19,8 +19,12 @@ def execute_shell_command(cmd):
     """
     kwargs = dict(args=cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=os.getcwd())
     process = subprocess.Popen(**kwargs)
-    stdout, stderr = process.communicate()
+    stdout_raw, stderr_raw = process.communicate()
     status = process.poll()
+
+    stdout = stdout_raw.decode('utf-8').rstrip()
+    stderr = stderr_raw.decode('utf-8').rstrip()
+
     return ExecutionResult(status, stdout, stderr)
 
 
