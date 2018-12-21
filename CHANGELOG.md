@@ -1,11 +1,11 @@
-## 1.0.4 (Unreleased)
+## 1.0.4 (December 21, 2018)
 
 CHANGES:
 
 * Added a new script bash/using-colour.sh. ([@TGWolf][])
 * Added a new script python/which.py. ([@TGWolf][])
 * Added a new script python/execute-shell-command.py. ([@TGWolf][])
-* Added a new scrupt python/version-compare.py. ([@TGWolf][])
+* Added a new script python/version-compare.py. ([@TGWolf][])
 
 ## 1.0.3 (November 28, 2018)
 
