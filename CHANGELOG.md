@@ -1,3 +1,9 @@
+## 1.0.5 (Unreleased)
+
+CHANGES:
+
+* Added a new script python/ordinal.py. ([@TGWolf][])
+
 ## 1.0.4 (December 21, 2018)
 
 CHANGES:
