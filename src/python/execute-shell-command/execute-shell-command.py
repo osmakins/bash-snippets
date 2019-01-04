@@ -7,7 +7,7 @@ A python function for executing shell commands and returning the outputs and exi
 from __future__ import print_function
 import collections
 import os
-import subprocess
+from subprocess import Popen, PIPE    # nosec
 
 
 ExecutionResult = collections.namedtuple('ExecutionResult', 'status, stdout, stderr')
@@ -17,8 +17,8 @@ def execute_shell_command(cmd):
     """
     execute the shell command
     """
-    kwargs = dict(args=cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, cwd=os.getcwd())
-    process = subprocess.Popen(**kwargs)
+    kwargs = dict(args=cmd, shell=True, stdout=PIPE, stderr=PIPE, cwd=os.getcwd())    # nosec
+    process = Popen(**kwargs)
     stdout_raw, stderr_raw = process.communicate()
     status = process.poll()
 
