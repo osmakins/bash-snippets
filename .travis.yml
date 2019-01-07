@@ -8,9 +8,9 @@ matrix:
       - mkdir travis
       - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
     install:
-      - "./travis/shellcheck/install.sh"
+      - ./travis/shellcheck/install.sh
     script:
-      - "./travis/shellcheck/scan.sh"
+      - ./travis/shellcheck/scan.sh
   - language: python
     python: 2.7
     os: linux
