@@ -1,8 +1,10 @@
-## 1.0.5 (Unreleased)
+## 1.0.5 (January 29, 2019)
 
 CHANGES:
 
 * Added a new script python/ordinal.py. ([@TGWolf][])
+* Rename the repo from code-snippets to bash-snippets. ([@TGWolf][])
+* Moved all python snippets into their own repo. ([@TGWolf][])
 
 ## 1.0.4 (December 21, 2018)
 
