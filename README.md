@@ -16,6 +16,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | --- | --- |
 | [center-text.sh](src/center-text/center-text.sh) | Calculate the compound interest over a defined term. |
 | [check-prerequisites.sh](src/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
+| [compare-versions.sh](src/compare-versions/compare-versions.sh) | Compare two version strings with optional custom delimiter. |
 | [error-messages.sh](src/error-messages/error-messages.sh) | Display error, warning and success messages. |
 | [get-confirmation.sh](src/get-confirmation/get-confirmation.sh) | Get user confirmation for an action. |
 | [get-script-info.sh](src/get-script-info/get-script-info.sh) | Get information about a script (full path and script name). |

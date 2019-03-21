@@ -1,3 +1,9 @@
+## 1.0.6 (Unreleased)
+
+CHANGES:
+
+* Added a new script compare-version/compare-version.sh. ([@TGWolf][])
+
 ## 1.0.5 (January 29, 2019)
 
 CHANGES:
