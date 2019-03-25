@@ -14,7 +14,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 
 | Name | Description |
 | --- | --- |
-| [center-text.sh](src/center-text/center-text.sh) | Calculate the compound interest over a defined term. |
+| [center-text.sh](src/center-text/center-text.sh) | Center any given text on the screen (optional define the screen width). |
 | [check-prerequisites.sh](src/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
 | [compare-versions.sh](src/compare-versions/compare-versions.sh) | Compare two version strings with optional custom delimiter. |
 | [error-messages.sh](src/error-messages/error-messages.sh) | Display error, warning and success messages. |
