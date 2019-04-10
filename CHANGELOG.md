@@ -3,6 +3,7 @@
 CHANGES:
 
 * Added a new script compare-version/compare-version.sh. ([@TGWolf][])
+* Added a new script sudo-librarian-puppet/sudo-librarian-puppet.sh. ([@TGWolf][])
 
 ## 1.0.5 (January 29, 2019)
 
