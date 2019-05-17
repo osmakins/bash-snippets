@@ -3,35 +3,26 @@
 # -------------------------------------------------------------------------------- #
 # Description                                                                      #
 # -------------------------------------------------------------------------------- #
-# This is a simple script to display some text in the center of the screen.        #
+# This is a simple script to check to see if one string contains another.          #
 # -------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------- #
-# Center text                                                                      #
+# Contains (string, substring)                                                     #
 # -------------------------------------------------------------------------------- #
-# This is a simple function that will center text on a screen, be calculating the  #
-# correct amount of padding based on the 'screen_width' and the length of the      #
-# text supplied to the function.                                                   #
+# This is a simple function that will check if one string contains another.        #
+#                                                                                  #
+# Returns 0 if the specified string contains the specified substring, otherwise 1. #
 # -------------------------------------------------------------------------------- #
 
-center_text()
+contains()
 {
-    textsize=${#1}
-    span=$(((screen_width + textsize) / 2))
-
-    printf '%*s\n' "${span}" "$1"
-}
-
-# -------------------------------------------------------------------------------- #
-# Get Screen Width                                                                 #
-# -------------------------------------------------------------------------------- #
-# A very simple wrapper which can dynamically get the screen width using tput.     #
-# -------------------------------------------------------------------------------- #
-
-get_screen_width()
-{
-    screen_width=$(tput cols)
-    declare -g screen_width
+    string="$1"
+    substring="$2"
+    if test "${string#*$substring}" != "$string"; then
+        return 0    # $substring is in $string
+    else
+        return 1    # $substring is not in $string
+    fi
 }
 
 # -------------------------------------------------------------------------------- #
@@ -42,9 +33,14 @@ get_screen_width()
 
 run_tests()
 {
-    get_screen_width
+    local haystack="this is a test string"
+    local needle="this"
 
-    center_text "This is an example"
+    if contains "${haystack}" "${needle}"; then
+        echo "We found a needle in a haystack"
+    else
+        echo "We did NOT found a needle in a haystack"
+    fi
 }
 
 # -------------------------------------------------------------------------------- #

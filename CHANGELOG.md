@@ -3,7 +3,16 @@
 CHANGES:
 
 * Added a new script compare-version/compare-version.sh. ([@TGWolf][])
+* Added a new script contains/contains. ([@TGWolf][])
 * Added a new script sudo-librarian-puppet/sudo-librarian-puppet.sh. ([@TGWolf][])
+
+BUG FIXES:
+
+* Fixed a bug in the get-terraform-version script when a new version of terraform was available. ([@TGWolf][])
+
+IMPROVEMENTS:
+
+* Made the way tests are run consistent across all snippets. ([@TGWolf][])
 
 ## 1.0.5 (January 29, 2019)
 

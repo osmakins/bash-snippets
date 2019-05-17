@@ -40,17 +40,29 @@ get_confirmation()
 }
 
 # -------------------------------------------------------------------------------- #
+# Test                                                                             #
+# -------------------------------------------------------------------------------- #
+# A VERY simple test function to ensure that it all works                          #
+# -------------------------------------------------------------------------------- #
+
+run_tests()
+{
+    response=0
+
+    while [[ $response == 0 ]]
+    do
+        response=$(get_confirmation "Do you want to exit? [y/N]")
+    done
+}
+
+# -------------------------------------------------------------------------------- #
 # Main()                                                                           #
 # -------------------------------------------------------------------------------- #
 # This is the actual 'script' and the functions/sub routines are called in order.  #
 # -------------------------------------------------------------------------------- #
 
-response=0
+run_tests
 
-while [[ $response == 0 ]]
-do
-    response=$(get_confirmation "Do you want to exit? [y/N]")
-done
 
 # -------------------------------------------------------------------------------- #
 # End of Script                                                                    #

@@ -59,7 +59,7 @@ get_script_info()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_test()
+run_tests()
 {
     get_script_info "${@}"
 
@@ -78,7 +78,7 @@ run_test()
 # This is the actual 'script' and the functions/sub routines are called in order.  #
 # -------------------------------------------------------------------------------- #
 
-run_test "$@"
+run_tests "$@"
 
 # -------------------------------------------------------------------------------- #
 # End of Script                                                                    #

@@ -22,7 +22,7 @@ get_terraform_version()
         exit
     fi
 
-    terraform_version=$(terraform --version)
+    terraform_version=$(terraform --version | head -n 1)
     terraform_version=${terraform_version##* }                  # retain the part after the last space
     terraform_version=${terraform_version#?}                    # strip the first letter
 
@@ -40,7 +40,7 @@ get_terraform_version()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_test()
+run_tests()
 {
     tf_version=$(get_terraform_version)
     echo "${tf_version}"
@@ -52,7 +52,7 @@ run_test()
 # This is the actual 'script' and the functions/sub routines are called in order.  #
 # -------------------------------------------------------------------------------- #
 
-run_test
+run_tests
 
 # -------------------------------------------------------------------------------- #
 # End of Script                                                                    #
