@@ -5,8 +5,7 @@
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/AntiPhotonltd/bash-snippets.svg)](https://github.com/AntiPhotonltd/bash-snippets)
 [![GitHub contributors](https://img.shields.io/github/contributors/AntiPhotonltd/bash-snippets.svg)](https://github.com/AntiPhotonltd/bash-snippets)
 
-Bash Snippets
-================
+# Bash Snippets
 
 This is a collection of useful(ish) bash snippets. The snippets are all simple self-contained pieces of code (a class or subroutine), but non of them are large enough to require having a repository in their own right.
 
@@ -14,6 +13,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 
 | Name | Description |
 | --- | --- |
+| [array-contains.sh](src/array-contains/array-contains.sh) | Check to see if an array contains a specific value. |
 | [center-text.sh](src/center-text/center-text.sh) | Center any given text on the screen (optional define the screen width). |
 | [check-prerequisites.sh](src/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
 | [compare-versions.sh](src/compare-versions/compare-versions.sh) | Compare two version strings with optional custom delimiter. |

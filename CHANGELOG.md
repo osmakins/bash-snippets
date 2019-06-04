@@ -5,6 +5,7 @@ CHANGES:
 * Added a new script compare-version/compare-version.sh. ([@TGWolf][])
 * Added a new script contains/contains. ([@TGWolf][])
 * Added a new script sudo-librarian-puppet/sudo-librarian-puppet.sh. ([@TGWolf][])
+* Added a new script array-contains/array-contains.sh. ([@TGWolf][])
 
 BUG FIXES:
 
