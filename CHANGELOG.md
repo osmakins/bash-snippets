@@ -6,7 +6,7 @@ CHANGES:
 * Added a new script contains/contains. ([@TGWolf][])
 * Added a new script sudo-librarian-puppet/sudo-librarian-puppet.sh. ([@TGWolf][])
 * Added a new script array-contains/array-contains.sh. ([@TGWolf][])
-
+* Added a new script array-to-string/array-to-string.sh. ([@TGWolf][])
 BUG FIXES:
 
 * Fixed a bug in the get-terraform-version script when a new version of terraform was available. ([@TGWolf][])
