@@ -26,8 +26,6 @@ array_to_string()
             prefix=${regex%"$separator"*}               # Extract content before the last instance
             suffix=${regex#"$prefix"}                   # Extract content *after* our prefix
             regex=${prefix}${suffix/"$separator"/"$3"}  # Append unmodified prefix w/ suffix w/ replacement
-        else
-            new=$regex
         fi
     fi
 
