@@ -14,7 +14,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | Name | Description |
 | --- | --- |
 | [array-contains.sh](src/array-contains/array-contains.sh) | Check to see if an array contains a specific value. |
-| [array-to-string.sh](src/array-to-string/array-to-string.sh) | Concert an array to a string with a custom seperator. | 
+| [array-to-string.sh](src/array-to-string/array-to-string.sh) | Concert an array to a string with a custom seperator and a final optional value. | 
 | [center-text.sh](src/center-text/center-text.sh) | Center any given text on the screen (optional define the screen width). |
 | [check-prerequisites.sh](src/check-prerequisites/check-prerequisites.sh) | Check prerequisite commands are installed. |
 | [compare-versions.sh](src/compare-versions/compare-versions.sh) | Compare two version strings with optional custom delimiter. |

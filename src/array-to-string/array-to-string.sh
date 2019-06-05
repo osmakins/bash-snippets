@@ -20,6 +20,17 @@ array_to_string()
 
     regex="$( printf "${separator}%s" "${arr[@]}" )"
     regex="${regex:${#separator}}" # remove leading separator
+
+    if [[ -n $3 ]]; then
+        if [[ $regex = *"$separator"* ]]; then
+            prefix=${regex%"$separator"*}               # Extract content before the last instance
+            suffix=${regex#"$prefix"}                   # Extract content *after* our prefix
+            regex=${prefix}${suffix/"$separator"/"$3"}  # Append unmodified prefix w/ suffix w/ replacement
+        else
+            new=$regex
+        fi
+    fi
+
     echo "${regex}"
 }
 
@@ -35,6 +46,8 @@ run_tests()
     array_of_numbers=( "1" "2" "3" )
 
     array_to_string ', ' array_of_numbers
+    array_to_string ', ' array_of_numbers ' and '
+    array_to_string ', ' array_of_numbers ' or '
 }
 
 # -------------------------------------------------------------------------------- #
