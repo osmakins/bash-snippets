@@ -1,3 +1,9 @@
+## 1.0.7 (Unreleased)
+
+CHANGES:
+
+* Added a new script terminal-or-not/terminal-or-not.sh. ([@TGWolf][])
+
 ## 1.0.6 (June 25, 2019)
 
 CHANGES:

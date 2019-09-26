@@ -26,5 +26,6 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | [rollingback.sh](src/rollingback/rollingback.sh) | Using signals to create rollback functions for cleaner scripting. |
 | [strict-mode.sh](src/strict-mode/strict-mode.sh) | An example of a 'strict' mode setup for bash scripts. |
 | [sudo-librarian-puppet.sh](src/sudo-librarian-puppet/sudo-librarian-puppet.sh ) | Run librarian-puppet via sudo without changing default sudoers file (Debian 9 / Puppet 5). |
-| [using-colour.sh](src/using-colour/using-colour.sh) | An exaaple of how to use colour (see [bash-colour-include](https://github.com/WolfSoftware/bash-colour-include) for a full working solution). |
+| [terminal-or-not.sh](src/terminal-or-not/terminal-or-not.sh) | A script to allow to determine if your script is attached to a terminal, pipe or redirection. |
+| [using-colour.sh](src/using-colour/using-colour.sh) | An example of how to use colour (see [bash-colour-include](https://github.com/WolfSoftware/bash-colour-include) for a full working solution). |
 | [using-set.sh](src/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
