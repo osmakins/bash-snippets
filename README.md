@@ -29,3 +29,4 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | [terminal-or-not.sh](src/terminal-or-not/terminal-or-not.sh) | A script to allow to determine if your script is attached to a terminal, pipe or redirection. |
 | [using-colour.sh](src/using-colour/using-colour.sh) | An example of how to use colour (see [bash-colour-include](https://github.com/WolfSoftware/bash-colour-include) for a full working solution). |
 | [using-set.sh](src/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
+| [variable-replace.sh](src/variable-replace/variable-replace.sh) | Replace template variables in a file with values from an associative array. |

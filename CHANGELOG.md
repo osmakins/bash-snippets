@@ -3,7 +3,7 @@
 CHANGES:
 
 * Added a new script terminal-or-not/terminal-or-not.sh. ([@TGWolf][])
-
+* Added a new script variable-replace/variable-replace.sh. ([@TGWolf][])
 ## 1.0.6 (June 25, 2019)
 
 CHANGES:
