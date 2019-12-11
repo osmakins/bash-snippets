@@ -1,4 +1,5 @@
 matrix:
+  include:
   - language: bash
     name: "Shellcheck [Bash running on Ubuntu Bionic 18.04]"
     dist: bionic
