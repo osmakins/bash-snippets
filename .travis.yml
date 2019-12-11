@@ -1,8 +1,7 @@
 matrix:
-  include:
   - language: bash
-    name: "Shellcheck (Bash)"
-    os: linux
+    name: "Shellcheck [Bash running on Ubuntu Bionic 18.04]"
+    dist: bionic
     before_install:
       - mkdir travis
       - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
@@ -11,8 +10,8 @@ matrix:
     script:
       - ./travis/shellcheck/scan.sh
   - language: ruby
-    name: "Link Checking (rvm 2.6.1)"
-    rvm: 2.6.1
+    name: "Link Checking (rvm 2.6)"
+    rvm: 2.6
     before_install:
       - mkdir travis
       - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
