@@ -21,7 +21,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | [contains.sh](src/contains/contains.sh) | Check to see if one string contains another. |
 | [error-messages.sh](src/error-messages/error-messages.sh) | Display error, warning and success messages. |
 | [get-confirmation.sh](src/get-confirmation/get-confirmation.sh) | Get user confirmation for an action. |
-| [get-git-root.sh](src/get-git-root/get-gitroot.sh) | Get the root directory of a given git repo (and handle correctly when it isn't a git repo). |
+| [get-git-root.sh](src/get-git-root/get-git-root.sh) | Get the root directory of a given git repo (and handle correctly when it isn't a git repo). |
 | [get-script-info.sh](src/get-script-info/get-script-info.sh) | Get information about a script (full path and script name). |
 | [get-terraform-version.sh](src/get-terraform-version/get-terraform-version.sh) | Get the current terraform version. |
 | [rollingback.sh](src/rollingback/rollingback.sh) | Using signals to create rollback functions for cleaner scripting. |
