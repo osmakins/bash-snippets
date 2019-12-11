@@ -8,6 +8,10 @@ For further info see our [changelogs](https://github.com/AntiPhotonltd/changelog
 
 ## [Unreleased]
 
+Documentation:
+
+* Updated the badges ion the README to be a little more on brand and relevant. ([@TGWolf][])
+
 ## [v1.0.8] - December 11 2019
 
 New Features:

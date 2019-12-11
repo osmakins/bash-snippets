@@ -1,9 +1,7 @@
-[![Build Status](https://img.shields.io/travis/AntiPhotonltd/bash-snippets/master.svg)](https://travis-ci.org/AntiPhotonltd/bash-snippets)
-[![Software License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
-[![Release](https://img.shields.io/github/release/AntiPhotonltd/bash-snippets.svg)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/AntiPhotonltd/bash-snippets/latest.svg)](https://github.com/AntiPhotonltd/bash-snippets/commits)
-[![GitHub repo size in bytes](https://img.shields.io/github/repo-size/AntiPhotonltd/bash-snippets.svg)](https://github.com/AntiPhotonltd/bash-snippets)
-[![GitHub contributors](https://img.shields.io/github/contributors/AntiPhotonltd/bash-snippets.svg)](https://github.com/AntiPhotonltd/bash-snippets)
+[![Build Status](https://img.shields.io/travis/AntiPhotonltd/bash-snippets/master?color=blueviolet&style=for-the-badge&logo=travis)](https://travis-ci.org/AntiPhotonltd/bash-snippets)
+[![Release](https://img.shields.io/github/release/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/AntiPhotonltd/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits)
+[![Software License](https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge)](LICENSE.md)
 
 # Bash Snippets
 
