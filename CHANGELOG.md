@@ -3,6 +3,7 @@
 NEW FEATURES:
 
 * Added a new script get-git-root/get-git-root.sh. ([@TGWolf][])
+* Added a new script is-git-repo/is-git-repo.sh ([@TGWolf][])
 
 ## 1.0.7 (December 10, 2019)
 

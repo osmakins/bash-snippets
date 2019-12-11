@@ -3,19 +3,17 @@
 # -------------------------------------------------------------------------------- #
 # Description                                                                      #
 # -------------------------------------------------------------------------------- #
-# A script to work out the root of a given git repo.                               #
+# A script to work out if a directory contains a git repo.                         #
 # -------------------------------------------------------------------------------- #
 
 # -------------------------------------------------------------------------------- #
-# Get Git Root                                                                     #
+# Is Git Repo                                                                      #
 # -------------------------------------------------------------------------------- #
-# Look at a supplied dir to see if it cointains a git repo and if so calculate the #
-# root of that repo.                                                               #
+# Look at a supplied dir to see if it cointains a git repo.                        #
 # -------------------------------------------------------------------------------- #
 
-function get_git_root()
+function is_git_repo()
 {
-    local root
     local retval
 
     #
@@ -27,33 +25,23 @@ function get_git_root()
         #
         if [[ -n $1 ]]; then
             if [[ ! -d $1 ]]; then
-                echo "$1 is not a valid directory"
                 return 1
             fi
             cd "${1}" || return 1
         fi
 
         #
-        # If we are in a .git directory we need to get out of it
-        #
-        if git rev-parse --is-inside-git-dir > /dev/null 2>&1; then
-            while [[ $(git rev-parse --is-inside-git-dir) == true ]]; do
-                cd ..
-            done
-        fi
-
-        #
         # Check to see if we are in a real git repo dir or not
         #
+        # The return value is always true if you are in a git repo.
+        #
+        # The output can be true or false depending where in the repo you are so we ignore this
+        #
         if git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-            root=$(git rev-parse --show-toplevel)
             retval=0
         else
-            root="${PWD} is not a git repo"
             retval=1
         fi
-
-        echo "${root}"
         return $retval
     )
 }
@@ -71,11 +59,11 @@ function run_test()
     ## now loop through the above array
     for i in "${dirs[@]}"
     do
-        echo "Testing: ${i}"
-        if root=$(get_git_root "${i}"); then
-            echo "Repo Root = $root"
+        echo -n "${i} is "
+        if is_git_repo "${i}"; then
+            echo "a git repo"
         else
-            echo "Error: $root"
+            echo "not a git repo"
         fi
     done
 }
