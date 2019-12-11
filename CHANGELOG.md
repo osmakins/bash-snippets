@@ -1,3 +1,9 @@
+## 1.0.8 (Unreleased)
+
+NEW FEATURES:
+
+* Added a new script get-git-root/get-git-root.sh. ([@TGWolf][])
+
 ## 1.0.7 (December 10, 2019)
 
 NEW FEATURES:
