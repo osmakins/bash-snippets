@@ -2,6 +2,7 @@
 [![Release](https://img.shields.io/github/release/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
 [![Github commits (since latest release)](https://img.shields.io/github/commits-since/AntiPhotonltd/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits)
 [![Software License](https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge)](LICENSE.md)
+[![Wolf](https://img.shields.io/badge/Created%20By-Wolf-blueviolet?style=for-the-badge)](https://github.com/TGWolf)
 
 # Bash Snippets
 
