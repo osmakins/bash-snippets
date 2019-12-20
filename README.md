@@ -1,8 +1,13 @@
 [![Build Status](https://img.shields.io/travis/AntiPhotonltd/bash-snippets/master?style=for-the-badge&logo=travis)](https://travis-ci.org/AntiPhotonltd/bash-snippets)
-[![Release](https://img.shields.io/github/release/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/AntiPhotonltd/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits)
 [![Software License](https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge)](LICENSE.md)
-[![Wolf](https://img.shields.io/badge/Created%20By-Wolf-blueviolet?style=for-the-badge)](https://github.com/TGWolf)
+[![Release](https://img.shields.io/github/release/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
+[![Last Release](https://img.shields.io/github/release-date/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/AntiPhotonltd/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits)
+[![Last Commit](https://img.shields.io/github/last-commit/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits/master)
+[![Code Size](https://img.shields.io/github/languages/code-size/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
+[![Repo Size](https://img.shields.io/github/repo-size/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
+[![Contributors](https://img.shields.io/github/contributors/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/graphs/contributors)
+[![Wolf](https://img.shields.io/badge/Created%20By-AntiPhoton%20Ltd.-blueviolet?style=for-the-badge)](https://github.com/AntiPhotonltd)
 
 # Bash Snippets
 
