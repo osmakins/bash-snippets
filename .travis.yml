@@ -1,27 +1,27 @@
 matrix:
   include:
   - language: bash
-    name: "Shellcheck [Bash running on Ubuntu Bionic 18.04]"
+    name: Shellcheck [Bash running on Ubuntu Bionic 18.04]
     dist: bionic
     before_install:
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/shellcheck-travis.git travis/shellcheck
     install:
-      - ./travis/shellcheck/install.sh
+    - "./travis/shellcheck/install.sh"
     script:
-      - ./travis/shellcheck/scan.sh
+    - "./travis/shellcheck/scan.sh"
   - language: ruby
-    name: "Link Checking (rvm 2.6)"
+    name: Link Checking (rvm 2.6)
     rvm: 2.6
     env: WHITELIST="https://github.com/TGWolf,https://github.com/AntiPhotonltd"
     before_install:
-      - mkdir travis
-      - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
+    - mkdir travis
+    - git clone https://github.com/TravisToolbox/awesomebot-travis.git travis/awesomebot
     install:
-      - ./travis/awesomebot/install.sh
-    script: 
-      - ./travis/awesomebot/scan.sh
+    - "./travis/awesomebot/install.sh"
+    script:
+    - "./travis/awesomebot/scan.sh"
 notifications:
   email: false
   slack:
-    secure: DKzWhPom/o58ZBczcoB0czYPtsHb/cPxAd2hSMsJ/ddm/f5rm5fjvL8q+bLGF3jFECi4yH9B38L1OtYsyjEAsqd3EJjDUsvfvXhWqS2L8y3ABVMkm+QC7j/FaG2nQJ6tkn6Vmj2Hk/aSNZamAIjNBel9VMB+h9DM9FQuCG42pWEErg6Kyv4AqKjzWodhW6BYKzzS6Z064EZH+3obwdF6TJmPjnBFGJAayx6hdWTMmePdBrioBrjRbtpJJReRY9vi3ASIZcI/OvlLZ0uOC8NU/7Z8EiFsbA3Cc08u4QyHRe5y59fX8xAKeJWhpxyC24zQ0BJwBpLDsO/6XeoiatfZew8GFIIM2sC5N9nH6ii6fw4XmPCOD9K9HmwFgymaxTW68Cxhp90LxV2omA3jSzh7v8CHiOHW32DEO5yWK/5ioIkYVJx1Bor/F01JGxjVlugS2TsmLavytPjMf5VWRBt+R+7xQqtDgr/eRwqwTingHBwy+ucWErfj71njo1QLMXJF+X9dax5Yo2OuxcIS7qChy/LJfkRHYc++gOqIE/WV8TdqQ6s0lFdnKUXQHD8imfLk1+XFlZhx64BUFvm4fXSe3p++RUEZzsnmdCE2EesNB1kTXvtCQvYg30NnvCD8AHoHfcVev+g9vSpFyThM/aaKv1vUzSopKuD0O+HqtrO/bDs=
+    secure: R+aGjsGyODK7A7CkKQmf0OoSA2j9ek6mnu48+zpN/rs0ruBRlWG45QnVtqj7s6/focpVeIgJeLSolMwFf++NuLuOE8VGYc9JwckEt5Au8aTNdPdKAuXzR1oVtCEblliY6dEAFdDD9tWxd/mi7gqmr4ckI1nveGkZPslkW8S65F7BUXJ8+jY6aVgn6wkwsel3WvfC2oRCqAV8F5TzvcaWd3jpJcxbSouzjjDh0whxZQUbW79TLhb0YS+1b5vyFzo+Vciw2h+113lMIDSOrPmQAr4tsMub8ZZfrjEiqeFlF7CXS5k1c4S/t+/QB3wsVbnVzzY9/gZofmfThThBKBKfjaP2TFqVSVfWh9ztWvDXEs/84kwkz+rYpWz/I2KtSUbMTcCfPCMfR/0bGZaLVgFuhccA03MAfZUhVNLpRkGK9FiFyaJ0uX1uKhZ+1axEPpuwFIUb/3lgSMT3frEK6YL/8QcWJRZR1kkZMNh5qES2gusuiHTAQRDEx/uH8o7oKfvsAQAOljFaccxjBe0HuZbd74ZMmNK6It6GgmTL9ka85bKxgi6JZBlxHV0YdFukbfQwE9dAkYXoGmZ4ySxkye0ISxaVFZk45vLx0+a8kEmgoLT6dTp7I9DEFQ3E+c8/C76uKeVZWC6npUqLdeKhw6jDTzTqeThSjGeOkLJoeWS8YVg=
