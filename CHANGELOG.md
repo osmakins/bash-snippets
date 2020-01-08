@@ -10,7 +10,7 @@ For further info see our [changelogs](https://github.com/AntiPhotonltd/changelog
 
 Chores:
 
-* Update the date in the License file.
+* Update the date in the License file. ([@TGWolf][])
 
 Documentation:
 
