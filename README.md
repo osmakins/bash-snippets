@@ -36,3 +36,4 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | [using-colour.sh](src/using-colour/using-colour.sh) | An example of how to use colour (see [bash-colour-include](https://github.com/WolfSoftware/bash-colour-include) for a full working solution). |
 | [using-set.sh](src/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
 | [variable-replace.sh](src/variable-replace/variable-replace.sh) | Replace template variables in a file with values from an associative array. |
+| [verbose-mode.sh](src/verbose-mode/verbose-mode.sh) | Demonstration of script wide verbose/silent mode.. |
