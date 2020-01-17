@@ -12,7 +12,7 @@
 # Take the name of an array and create a vaid reference to it.                     #
 # -------------------------------------------------------------------------------- #
 
-ref_array()
+function ref_array()
 {
     local varname="$1"
     local export_as="$2"
@@ -29,7 +29,7 @@ ref_array()
 # Take the name of an array and create a vaid reference to it.                     #
 # -------------------------------------------------------------------------------- #
 
-replace_variables()
+function replace_variables()
 {
     eval "$(ref_array "$1" array)"
     filename="${2}"
@@ -54,7 +54,7 @@ replace_variables()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     declare -A config
 

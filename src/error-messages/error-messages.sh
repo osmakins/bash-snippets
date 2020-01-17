@@ -13,7 +13,7 @@
 # A simple wrapper function to show something was an error.                        #
 # -------------------------------------------------------------------------------- #
 
-show_error()
+function show_error()
 {
     if [[ -n $1 ]]; then
         printf '%s%s%s\n' "${red}" "${*}" "${reset}" 1>&2
@@ -26,7 +26,7 @@ show_error()
 # A simple wrapper function to show something was a warning.                       #
 # -------------------------------------------------------------------------------- #
 
-show_warning()
+function show_warning()
 {
     if [[ -n $1 ]]; then
         printf '%s%s%s\n' "${yellow}" "${*}" "${reset}" 1>&2
@@ -39,7 +39,7 @@ show_warning()
 # A simple wrapper function to show something was a success.                       #
 # -------------------------------------------------------------------------------- #
 
-show_success()
+function show_success()
 {
     if [[ -n $1 ]]; then
         printf '%s%s%s\n' "${green}" "${*}" "${reset}" 1>&2
@@ -52,7 +52,7 @@ show_success()
 # A very simple wrapper which can dynamically get the required colours.            #
 # -------------------------------------------------------------------------------- #
 
-get_colours()
+function get_colours()
 {
     local ncolors
 
@@ -98,7 +98,7 @@ get_colours()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_test()
+function run_test()
 {
     get_colours
 

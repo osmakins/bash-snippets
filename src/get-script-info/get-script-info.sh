@@ -15,7 +15,7 @@ READONLY_INFO=true               # Set the script info to READONLY
 # what it is called etc.                                                           #
 # -------------------------------------------------------------------------------- #
 
-get_script_info()
+function get_script_info()
 {
     local ro=${READONLY_INFO:-false}
 
@@ -59,7 +59,7 @@ get_script_info()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     get_script_info "${@}"
 

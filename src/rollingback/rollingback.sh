@@ -20,7 +20,7 @@ rollback_stack=( )
 # A dummy demo rollback function.                                                  #
 # -------------------------------------------------------------------------------- #
 
-abc()
+function abc()
 {
     echo "abc----$1";
 }
@@ -31,7 +31,7 @@ abc()
 # A dummy demo rollback function.                                                  #
 # -------------------------------------------------------------------------------- #
 
-def()
+function def()
 {
     echo "def----$1";
 }
@@ -42,7 +42,7 @@ def()
 # Add a rollback function to the stack.                                            #
 # -------------------------------------------------------------------------------- #
 
-add_rollback()
+function add_rollback()
 {
     rollback_stack[${#rollback_stack[*]}]=$1;
 }
@@ -59,7 +59,7 @@ add_rollback()
 # errors in the rollback code could trigger another rollback and a possible loop.  #
 # -------------------------------------------------------------------------------- #
 
-run_rollbacks()
+function run_rollbacks()
 {
     unset_traps
 
@@ -80,7 +80,7 @@ run_rollbacks()
 # errors and handle the rollbacks.                                                 #
 # -------------------------------------------------------------------------------- #
 
-set_traps()
+function set_traps()
 {
     trap run_rollbacks INT TERM EXIT
 }
@@ -92,7 +92,7 @@ set_traps()
 # the script will cause the rollbacks to run undoing all the scripts good work.    #
 # -------------------------------------------------------------------------------- #
 
-unset_traps()
+function unset_traps()
 {
     trap - INT TERM EXIT
 }
@@ -103,7 +103,7 @@ unset_traps()
 # A VERY simple test function to ensure that it all works.                         #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     set_traps
 

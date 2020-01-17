@@ -13,7 +13,7 @@
 # string of values.                                                                #
 # -------------------------------------------------------------------------------- #
 
-array_to_string()
+function array_to_string()
 {
     separator="$1"
     local -n arr=$2
@@ -38,7 +38,7 @@ array_to_string()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
 # shellcheck disable=SC2034
     array_of_numbers=( "1" "2" "3" )

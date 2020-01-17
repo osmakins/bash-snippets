@@ -9,7 +9,7 @@
 # https://github.com/WolfSoftware/bash-colour-include.                             #
 # -------------------------------------------------------------------------------- #
 
-set_colours()
+function set_colours()
 {
     # Foreground Colours
     fgRed=''
@@ -48,7 +48,7 @@ set_colours()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     set_colours
 

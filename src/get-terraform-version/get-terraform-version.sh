@@ -12,7 +12,7 @@
 # Programatically get the terraform version.                                       #
 # -------------------------------------------------------------------------------- #
 
-get_terraform_version()
+function get_terraform_version()
 {
     local terraform_version
 
@@ -40,7 +40,7 @@ get_terraform_version()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     tf_version=$(get_terraform_version)
     echo "${tf_version}"

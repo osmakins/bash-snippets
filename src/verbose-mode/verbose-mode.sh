@@ -16,7 +16,7 @@ VERBOSE=false
 # original file descriptors to /dev/null.                                          #
 # -------------------------------------------------------------------------------- #
 
-enable_verbose()
+function enable_verbose()
 {
     exec 3>&1
     exec 4>&2
@@ -30,7 +30,7 @@ enable_verbose()
     fi
 }
 
-run_tests()
+function run_tests()
 {
     enable_verbose
 

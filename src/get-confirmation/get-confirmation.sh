@@ -15,7 +15,7 @@
 # until a valid response is given.                                                 #
 # -------------------------------------------------------------------------------- #
 
-get_confirmation()
+function get_confirmation()
 {
     local valid_response=false
     local return_value=0
@@ -45,7 +45,7 @@ get_confirmation()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     response=0
 

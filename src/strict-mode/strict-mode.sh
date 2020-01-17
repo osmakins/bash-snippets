@@ -55,7 +55,7 @@ IFS=$'\n\t'
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     local filename="strict-mode.sh"
     local string="test"

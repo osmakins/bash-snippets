@@ -45,7 +45,7 @@ function in_redirection()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_test()
+function run_test()
 {
     in_terminal && echo 'STDOUT is attached to TTY'
 

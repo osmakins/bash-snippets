@@ -14,7 +14,7 @@
 # Returns 0 if the specified string contains the specified substring, otherwise 1. #
 # -------------------------------------------------------------------------------- #
 
-array_contains()
+function array_contains()
 {
     local -n haystack=$1
     local needle=$2
@@ -34,7 +34,7 @@ array_contains()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
 # shellcheck disable=SC2034
     array_of_numbers=( "1" "2" "3" )

@@ -14,7 +14,7 @@
 # Returns 0 if the specified string contains the specified substring, otherwise 1. #
 # -------------------------------------------------------------------------------- #
 
-contains()
+function contains()
 {
     string="$1"
     substring="$2"
@@ -31,7 +31,7 @@ contains()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     local haystack="this is a test string"
     local needle="this"

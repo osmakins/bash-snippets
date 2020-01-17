@@ -14,7 +14,7 @@
 # text supplied to the function.                                                   #
 # -------------------------------------------------------------------------------- #
 
-center_text()
+function center_text()
 {
     textsize=${#1}
     span=$(((screen_width + textsize) / 2))
@@ -28,7 +28,7 @@ center_text()
 # A very simple wrapper which can dynamically get the screen width using tput.     #
 # -------------------------------------------------------------------------------- #
 
-get_screen_width()
+function get_screen_width()
 {
     screen_width=$(tput cols)
     declare -g screen_width
@@ -40,7 +40,7 @@ get_screen_width()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     get_screen_width
 

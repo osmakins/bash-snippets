@@ -20,7 +20,7 @@ COMMANDS=( "curl" "top" "IwillFail" )
 # Check to ensure that the prerequisite commmands exist.                           #
 # -------------------------------------------------------------------------------- #
 
-check_prereqs()
+function check_prereqs()
 {
     local error_count=0
 
@@ -45,7 +45,7 @@ check_prereqs()
 # A VERY simple test function to ensure that it all works                          #
 # -------------------------------------------------------------------------------- #
 
-run_tests()
+function run_tests()
 {
     check_prereqs
 }
