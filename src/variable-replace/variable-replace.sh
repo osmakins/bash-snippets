@@ -62,8 +62,8 @@ function run_tests()
 
 # shellcheck disable=SC2034
     config=(
-        [USERNAME_PLACE_HOLDER]='admin'
-        [PASSWORD_PLACE_HOLDER]='password'
+        [{{ USERNAME_PLACE_HOLDER }}]='admin'
+        [{{ PASSWORD_PLACE_HOLDER }}]='password'
     )
 
     replace_variables "config" "test.sh"
