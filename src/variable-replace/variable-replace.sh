@@ -38,13 +38,15 @@ function replace_variables()
     local search
     local replace
 
-# shellcheck disable=SC2154
+    # shellcheck disable=SC2154
     for i in "${!array[@]}"; do
         search="${i}"
         replace="${array[$i]}"
 
-        sed -i '' "s/$search/$replace/g" "${filename}"
-        printf "Replaced %s with %s\n" "$search" "${replace}"
+        if grep -q "${search}" "${filename}"; then
+            sed -i '' "s/${search}/${replace}/g" "${filename}"
+            printf "Replaced %s with %s\n" "${search}" "${replace}"
+        fi
     done
 }
 
