@@ -1,13 +1,13 @@
-[![Build Status](https://img.shields.io/travis/AntiPhotonltd/bash-snippets/master?style=for-the-badge&logo=travis)](https://travis-ci.org/AntiPhotonltd/bash-snippets)
+[![Build Status](https://img.shields.io/travis/SneakyCode/bash-snippets/master?style=for-the-badge&logo=travis)](https://travis-ci.org/SneakyCode/bash-snippets)
 [![Software License](https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge)](LICENSE.md)
-[![Release](https://img.shields.io/github/release/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
-[![Last Release](https://img.shields.io/github/release-date/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/releases/latest)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/AntiPhotonltd/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits)
-[![Last Commit](https://img.shields.io/github/last-commit/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/commits/master)
-[![Code Size](https://img.shields.io/github/languages/code-size/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
-[![Repo Size](https://img.shields.io/github/repo-size/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
-[![Contributors](https://img.shields.io/github/contributors/AntiPhotonltd/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/AntiPhotonltd/bash-snippets/graphs/contributors)
-[![Wolf](https://img.shields.io/badge/Created%20By-AntiPhoton%20Ltd.-blueviolet?style=for-the-badge)](https://github.com/AntiPhotonltd)
+[![Release](https://img.shields.io/github/release/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/SneakyCode/bash-snippets/releases/latest)
+[![Last Release](https://img.shields.io/github/release-date/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/releases/latest)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SneakyCode/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/commits)
+[![Last Commit](https://img.shields.io/github/last-commit/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/commits/master)
+[![Code Size](https://img.shields.io/github/languages/code-size/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
+[![Repo Size](https://img.shields.io/github/repo-size/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
+[![Contributors](https://img.shields.io/github/contributors/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/graphs/contributors)
+[![Wolf](https://img.shields.io/badge/Created%20By-AntiPhoton%20Ltd.-blueviolet?style=for-the-badge)](https://github.com/SneakyCode)
 
 # Bash Snippets
 
@@ -33,6 +33,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | [strict-mode.sh](src/strict-mode/strict-mode.sh) | An example of a 'strict' mode setup for bash scripts. |
 | [sudo-librarian-puppet.sh](src/sudo-librarian-puppet/sudo-librarian-puppet.sh ) | Run librarian-puppet via sudo without changing default sudoers file (Debian 9 / Puppet 5). |
 | [terminal-or-not.sh](src/terminal-or-not/terminal-or-not.sh) | A script to allow to determine if your script is attached to a terminal, pipe or redirection. |
+| [untag.sh](src/untag/untag.sh) | A simple script to remove ALL tags from a git repo. |
 | [using-colour.sh](src/using-colour/using-colour.sh) | An example of how to use colour (see [bash-colour-include](https://github.com/WolfSoftware/bash-colour-include) for a full working solution). |
 | [using-set.sh](src/using-set/using-set.sh) | Using 'set' for more robust shell scripting. |
 | [variable-replace.sh](src/variable-replace/variable-replace.sh) | Replace template variables in a file with values from an associative array. |
