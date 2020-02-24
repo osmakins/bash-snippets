@@ -5,11 +5,15 @@ All notable changes to this project will be documented in this file.
 
 This changelog was automatically generated using [Caretaker](https://github.com/WolfAtheneum/bash-snippets) by [Wolf Software](https://github.com/WolfSoftware)
 
+### [Unreleased](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.9...HEAD)
+
+- Update LICENSE.md to reflect change of ownership [`[0a6ee57]`](https://github.com/WolfAtheneum/bash-snippets/commit/0a6ee579a9b5b41260ca37b555abd2e4c79c9746) [`[TGWolf]`](https://github.com/TGWolf)
+
 ### [v1.0.9](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.8...v1.0.9)
 
 > Released on February, 24th 2020
 
-- rewrite of untag to ensure shellcheck compliance [`[3f03ad2]`](https://github.com/WolfAtheneum/bash-snippets/commit/3f03ad2508c5c057f1a4bb25f4144ebba1ed4f05) [`[TGWolf]`](https://github.com/TGWolf)
+- rewrite of untag to ensure shellcheck compliance [`[ad3c821]`](https://github.com/WolfAtheneum/bash-snippets/commit/ad3c8218278503bb5c66a6401c66553511b9cadd) [`[TGWolf]`](https://github.com/TGWolf)
 
 - Update .travis file to exclude the changelog [`[b80c58d]`](https://github.com/WolfAtheneum/bash-snippets/commit/b80c58d011f2a0677422c714c5dc9e914b5bf82a) [`[TGWolf]`](https://github.com/TGWolf)
 

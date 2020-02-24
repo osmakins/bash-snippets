@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright © `2016-2020` `AntiPhoton Limited`
+Copyright © `2019-2020` `Tim Gurney aka Wolf aka TGWolf`
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
