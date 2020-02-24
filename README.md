@@ -1,13 +1,13 @@
-[![Build Status](https://img.shields.io/travis/SneakyCode/bash-snippets/master?style=for-the-badge&logo=travis)](https://travis-ci.org/SneakyCode/bash-snippets)
-[![Software License](https://img.shields.io/badge/license-MIT-blueviolet?style=for-the-badge)](LICENSE.md)
-[![Release](https://img.shields.io/github/release/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/SneakyCode/bash-snippets/releases/latest)
-[![Last Release](https://img.shields.io/github/release-date/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/releases/latest)
-[![Github commits (since latest release)](https://img.shields.io/github/commits-since/SneakyCode/bash-snippets/latest?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/commits)
-[![Last Commit](https://img.shields.io/github/last-commit/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/commits/master)
-[![Code Size](https://img.shields.io/github/languages/code-size/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
-[![Repo Size](https://img.shields.io/github/repo-size/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](#)
-[![Contributors](https://img.shields.io/github/contributors/SneakyCode/bash-snippets?color=blueviolet&style=for-the-badge&logo=github)](https://github.com/SneakyCode/bash-snippets/graphs/contributors)
-[![Wolf](https://img.shields.io/badge/Created%20By-AntiPhoton%20Ltd.-blueviolet?style=for-the-badge)](https://github.com/SneakyCode)
+[![Build Status](https://img.shields.io/travis/WolfAtheneum/bash-snippets/master?style=for-the-badge&logo=travis)](https://travis-ci.org/WolfAtheneum/bash-snippets)
+[![Software License](https://img.shields.io/badge/license-MIT-black?style=for-the-badge)](LICENSE.md)
+[![Release](https://img.shields.io/github/release/WolfAtheneum/bash-snippets?color=black&style=for-the-badge&logo=github&label=Latest%20Release)](https://github.com/WolfAtheneum/bash-snippets/releases/latest)
+[![Last Release](https://img.shields.io/github/release-date/WolfAtheneum/bash-snippets?color=black&style=for-the-badge&logo=github)](https://github.com/WolfAtheneum/bash-snippets/releases/latest)
+[![Github commits (since latest release)](https://img.shields.io/github/commits-since/WolfAtheneum/bash-snippets/latest?color=black&style=for-the-badge&logo=github)](https://github.com/WolfAtheneum/bash-snippets/commits)
+[![Last Commit](https://img.shields.io/github/last-commit/WolfAtheneum/bash-snippets?color=black&style=for-the-badge&logo=github)](https://github.com/WolfAtheneum/bash-snippets/commits/master)
+[![Code Size](https://img.shields.io/github/languages/code-size/WolfAtheneum/bash-snippets?color=black&style=for-the-badge&logo=github)](#)
+[![Repo Size](https://img.shields.io/github/repo-size/WolfAtheneum/bash-snippets?color=black&style=for-the-badge&logo=github)](#)
+[![Contributors](https://img.shields.io/github/contributors/WolfAtheneum/bash-snippets?color=black&style=for-the-badge&logo=github)](https://github.com/WolfAtheneum/bash-snippets/graphs/contributors)
+[![WolfAtheneum](https://img.shields.io/badge/Created%20By-Wolf-black?style=for-the-badge)](https://github.com/WolfAtheneum)
 
 # Bash Snippets
 
