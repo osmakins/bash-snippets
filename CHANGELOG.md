@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.9...HEAD)
 
-- Update LICENSE.md to reflect change of ownership [`[0a6ee57]`](https://github.com/WolfAtheneum/bash-snippets/commit/0a6ee579a9b5b41260ca37b555abd2e4c79c9746) [`[TGWolf]`](https://github.com/TGWolf)
+- Rework the verbose.sh file and add in a wrapper [`[4710ea4]`](https://github.com/WolfAtheneum/bash-snippets/commit/4710ea415034b6eb3cf8b63a15dc15ad7362d329) [`[TGWolf]`](https://github.com/TGWolf)
+
+- Update LICENSE.md to reflect change of ownership [`[90d8de5]`](https://github.com/WolfAtheneum/bash-snippets/commit/90d8de58b527ce6eb42077a5a6699d6d5473ddd8) [`[TGWolf]`](https://github.com/TGWolf)
 
 ### [v1.0.9](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.8...v1.0.9)
 

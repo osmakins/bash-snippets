@@ -9,14 +9,14 @@
 VERBOSE=false
 
 # -------------------------------------------------------------------------------- #
-# Enable verbose                                                                   #
+# Set Verbose Mode                                                                 #
 # -------------------------------------------------------------------------------- #
 # This is a simple function that will enable verbose mode based on a global        #
 # variable. It does this by cloning stdout and stderr and then redirecting the     #
 # original file descriptors to /dev/null.                                          #
 # -------------------------------------------------------------------------------- #
 
-function enable_verbose()
+function set_verbose_mode()
 {
     exec 3>&1
     exec 4>&2
@@ -24,18 +24,40 @@ function enable_verbose()
     if [[ "${VERBOSE}" = true ]]; then
         echo "Verbose output enabled"
     else
-        echo "Verbose output disabled"
         exec 1>/dev/null
         exec 2>/dev/null
     fi
 }
 
+# -------------------------------------------------------------------------------- #
+# Output Wrapper                                                                   #
+# -------------------------------------------------------------------------------- #
+# A wrapper to use instead of echo which will handle the forcing of messages to be #
+# displayed even when verbose mode is off.                                         #
+# -------------------------------------------------------------------------------- #
+
+function output()
+{
+    if [[ -n $1 ]]; then
+        if [[ -n $2 ]] && [[ "${2}" = forced ]]; then
+            echo "$1" 1>&3 2>&4
+        else
+            echo "$1"
+        fi
+    fi
+}
+
+# -------------------------------------------------------------------------------- #
+# Run the Tests                                                                    #
+# -------------------------------------------------------------------------------- #
+# -------------------------------------------------------------------------------- #
+
 function run_tests()
 {
-    enable_verbose
+    set_verbose_mode
 
-    echo "I won't be visible when verbose=false"
-    echo "I will be visible no matter what" 1>&3 2>&4
+    output "I won't be visible when verbose=false"
+    output "I will be visible no matter what" forced
 }
 
 # -------------------------------------------------------------------------------- #
