@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.9...HEAD)
 
-- test [`[d9cef47]`](https://github.com/WolfAtheneum/bash-snippets/commit/d9cef47cb704312ddb50b888ba7a4a0a1cb8bce8) [`[TGWolf]`](https://github.com/TGWolf)
+- test [`[1407e12]`](https://github.com/WolfAtheneum/bash-snippets/commit/1407e1205459a201ed9f99935d8bac536c55035d) [`[TGWolf]`](https://github.com/TGWolf)
+
+- test [`[cdcdbad]`](https://github.com/WolfAtheneum/bash-snippets/commit/cdcdbad410d2f0cebea2aa67ddf4397667e75c45) [`[TGWolf]`](https://github.com/TGWolf)
 
 - Tweak readme [`[b81179d]`](https://github.com/WolfAtheneum/bash-snippets/commit/b81179ddd8f92c6d4d23b955a36e95eb842fab9c) [`[TGWolf]`](https://github.com/TGWolf)
 
