@@ -30,7 +30,7 @@ This is a collection of useful(ish) bash snippets. The snippets are all simple s
 | [get-terraform-version.sh](src/get-terraform-version/get-terraform-version.sh) | Get the current terraform version. |
 | [is-git-repo.sh](src/is-git-repo/is-git-repo.sh) | Check if a given directory contains a git repo. |
 | [rollingback.sh](src/rollingback/rollingback.sh) | Using signals to create rollback functions for cleaner scripting. |
-| [stacktrace.sh](src/stacktrace/stacktrace.sh) | Provide a stack trace. |
+| [stacktrace.sh](src/stacktrace/stacktrace.sh) | Provide a stack trace for from main to the point of of calling the stacktrace. |
 | [strict-mode.sh](src/strict-mode/strict-mode.sh) | An example of a 'strict' mode setup for bash scripts. |
 | [sudo-librarian-puppet.sh](src/sudo-librarian-puppet/sudo-librarian-puppet.sh ) | Run librarian-puppet via sudo without changing default sudoers file (Debian 9 / Puppet 5). |
 | [terminal-or-not.sh](src/terminal-or-not/terminal-or-not.sh) | A script to allow to determine if your script is attached to a terminal, pipe or redirection. |

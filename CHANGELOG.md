@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.9...HEAD)
 
-- Added stacktrace.sh [`[e36fe31]`](https://github.com/WolfAtheneum/bash-snippets/commit/e36fe319abb546489ff07175c19c0e681d708185) [`[TGWolf]`](https://github.com/TGWolf)
+- Tweak readme [`[561a32b]`](https://github.com/WolfAtheneum/bash-snippets/commit/561a32b445ab3e57e226d492eeca743adf876a43) [`[TGWolf]`](https://github.com/TGWolf)
+
+- Added stacktrace.sh [`[0426afd]`](https://github.com/WolfAtheneum/bash-snippets/commit/0426afd3a0fdf18737ffec203bafb7e7556cf781) [`[TGWolf]`](https://github.com/TGWolf)
 
 - Rework the verbose.sh file and add in a wrapper [`[2115784]`](https://github.com/WolfAtheneum/bash-snippets/commit/21157844bc85408a45f76e468a349af996c7422d) [`[TGWolf]`](https://github.com/TGWolf)
 
