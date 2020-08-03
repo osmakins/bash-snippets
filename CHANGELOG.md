@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/WolfAtheneum/bash-snippets/compare/v1.0.9...HEAD)
 
-- Testing out what happens when we add a multiline commit message [`[267034a]`](https://github.com/WolfAtheneum/bash-snippets/commit/267034aaa14a56c170f44a321b297182c7c96549) [`[TGWolf]`](https://github.com/TGWolf)
+- test [`[64d90d1]`](https://github.com/WolfAtheneum/bash-snippets/commit/64d90d1a545ebb248a9895d0a90b513725c47ce9) [`[TGWolf]`](https://github.com/TGWolf)
+
+- Testing out what happens when we add a multiline commit message [`[56afe1a]`](https://github.com/WolfAtheneum/bash-snippets/commit/56afe1a5976a70237df798402c29d9386c332152) [`[TGWolf]`](https://github.com/TGWolf)
 
 - untest [`[534d030]`](https://github.com/WolfAtheneum/bash-snippets/commit/534d030f1232328dc1b967c3df767ee42b3c6368) [`[TGWolf]`](https://github.com/TGWolf)
 
